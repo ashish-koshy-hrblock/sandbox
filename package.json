@@ -1,0 +1,18 @@
+{
+  "name": "geektrust",
+  "version": "1.0.0",
+  "description": "geektrust-project",
+  "scripts": {
+    "tsc": "tsc",
+    "mocha": "mocha",
+    "postinstall": "tsc 1/main.ts 2/main.ts 3/main.ts",
+    "start": "node 1/main.js && node 2/main.js && node 3/main.js",
+    "test": "mocha 1/test.js && mocha 2/test.js && mocha 3/test.js"
+  },
+  "author": "Ashish Koshy",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4",
+    "mocha": "^10.0.0"
+  }
+}
